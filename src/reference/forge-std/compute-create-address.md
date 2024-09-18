@@ -13,7 +13,7 @@ Compute the address a contract will be deployed at for a given deployer address 
 ### Example
 
 ```solidity
-address governanceAddress = computeCreateAddress(0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266, 1);
+address governanceAddress = vm.computeCreateAddress(0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266, 1);
 
 // this contract requires a governance contract which hasn't been deployed yet
 Contract contract = new Contract(governanceAddress);
